@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Save Name";
+}
+
+<h1>Save Name</h1>
+
+<form method="post">
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" name="name" />
+    <button type="submit">Save</button>
+</form>
+
+@if (ViewBag.Message != null)
+{
+    <p style="color: green">@ViewBag.Message</p>
+}
